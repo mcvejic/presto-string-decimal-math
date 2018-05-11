@@ -11,6 +11,7 @@ import com.mcvejic.presto.udf.aggregation.StringDecimalAverageFunction;
 import com.mcvejic.presto.udf.aggregation.StringDecimalMaxFunction;
 import com.mcvejic.presto.udf.aggregation.StringDecimalMinFunction;
 import com.mcvejic.presto.udf.aggregation.StringDecimalSumFunction;
+import com.mcvejic.presto.udf.scalar.StringDecimalScalarFunctions;
 
 public class StringDecimalMath
         implements Plugin
@@ -23,6 +24,7 @@ public class StringDecimalMath
                 .add(StringDecimalSumFunction.class)
                 .add(StringDecimalMinFunction.class)
                 .add(StringDecimalMaxFunction.class)
+                .add(StringDecimalScalarFunctions.class)
                 .build();
     }
 }

@@ -70,6 +70,11 @@ public class StringDecimalMaxFunction
     @OutputFunction(StandardTypes.VARCHAR)
     public static void output(DecimalState state, BlockBuilder out)
     {
-        VARCHAR.writeString(out, state.getDecimal().toStringAscii());
+        if (state != null && state.getDecimal() != null && !state.getDecimal().toStringAscii().isEmpty()) {
+            VARCHAR.writeString(out, state.getDecimal().toStringAscii());
+        }
+        else {
+            out.appendNull();
+        }
     }
 }

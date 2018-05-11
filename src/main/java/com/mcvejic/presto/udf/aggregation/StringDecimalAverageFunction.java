@@ -68,8 +68,13 @@ public class StringDecimalAverageFunction
             out.appendNull();
         }
         else {
-            Apfloat value = new Apfloat(state.getDecimal().toStringAscii(), 100);
-            VARCHAR.writeString(out, value.divide(new Apfloat(count, 100)).toString(true));
+            if (state.getDecimal() != null && !state.getDecimal().toStringAscii().isEmpty()) {
+                Apfloat value = new Apfloat(state.getDecimal().toStringAscii(), 100);
+                VARCHAR.writeString(out, value.divide(new Apfloat(count, 100)).toString(true));
+            }
+            else {
+                out.appendNull();
+            }
         }
     }
 }
