@@ -18,6 +18,7 @@ public class StringDecimalScalarFunctions
     @Description("Divides two decimals stored as strings")
     @ScalarFunction("str_dec_math_divide")
     @SqlType(StandardTypes.VARCHAR)
+    @SqlNullable
     public static Slice str_dec_math_divide(@SqlNullable @SqlType(StandardTypes.VARCHAR) Slice dividend, @SqlNullable @SqlType(StandardTypes.VARCHAR) Slice divisor)
     {
         if (dividend == null || dividend.toStringAscii().isEmpty() || divisor == null || divisor.toStringAscii().isEmpty()) {
@@ -31,6 +32,7 @@ public class StringDecimalScalarFunctions
     @Description("Multiply two decimals stored as strings")
     @ScalarFunction("str_dec_math_multiply")
     @SqlType(StandardTypes.VARCHAR)
+    @SqlNullable
     public static Slice str_dec_math_multiply(@SqlNullable @SqlType(StandardTypes.VARCHAR) Slice multiplicand, @SqlNullable @SqlType(StandardTypes.VARCHAR) Slice multiplier)
     {
         if (multiplicand == null || multiplicand.toStringAscii().isEmpty() || multiplier == null || multiplier.toStringAscii().isEmpty()) {
