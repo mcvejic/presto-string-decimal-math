@@ -1,4 +1,4 @@
-package com.mcvejic.presto.udf.aggregation;
+package com.thinkstep.presto.udf.aggregation;
 
 /*
   Created by milan on 09/05/18.

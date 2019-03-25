@@ -1,4 +1,4 @@
-package com.mcvejic.presto.udf.scalar;
+package com.thinkstep.presto.udf.scalar;
 
 /**
  * Created by milan on 11/05/18.

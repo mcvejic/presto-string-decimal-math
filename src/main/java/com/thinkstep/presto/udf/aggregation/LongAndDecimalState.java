@@ -1,4 +1,4 @@
-package com.mcvejic.presto.udf.aggregation;
+package com.thinkstep.presto.udf.aggregation;
 
 import com.facebook.presto.spi.function.AccumulatorState;
 import io.airlift.slice.Slice;
