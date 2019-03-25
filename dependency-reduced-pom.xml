@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mcvejic</groupId>
+  <groupId>com.thinkstep</groupId>
   <artifactId>presto-string-decimal-math</artifactId>
   <version>1.0-SNAPSHOT</version>
   <description>Presto - UDF plugin for doing BigDecimal math over String columns</description>
@@ -67,7 +67,7 @@
     <dependency>
       <groupId>com.facebook.presto</groupId>
       <artifactId>presto-spi</artifactId>
-      <version>0.200</version>
+      <version>0.217</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -87,7 +87,7 @@
     <dependency>
       <groupId>io.airlift</groupId>
       <artifactId>slice</artifactId>
-      <version>0.32</version>
+      <version>0.36</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -105,7 +105,7 @@
     <dependency>
       <groupId>io.airlift</groupId>
       <artifactId>log</artifactId>
-      <version>0.163</version>
+      <version>0.178</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -133,7 +133,7 @@
     <dependency>
       <groupId>com.facebook.presto</groupId>
       <artifactId>presto-tests</artifactId>
-      <version>0.200</version>
+      <version>0.217</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -154,6 +154,10 @@
         </exclusion>
         <exclusion>
           <artifactId>bootstrap</artifactId>
+          <groupId>io.airlift</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>concurrent</artifactId>
           <groupId>io.airlift</groupId>
         </exclusion>
         <exclusion>
@@ -229,7 +233,7 @@
     <dependency>
       <groupId>com.facebook.presto</groupId>
       <artifactId>presto-main</artifactId>
-      <version>0.200</version>
+      <version>0.217</version>
       <type>test-jar</type>
       <scope>test</scope>
       <exclusions>
@@ -263,10 +267,6 @@
         </exclusion>
         <exclusion>
           <artifactId>aircompressor</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>concurrent</artifactId>
           <groupId>io.airlift</groupId>
         </exclusion>
         <exclusion>
@@ -311,6 +311,10 @@
         </exclusion>
         <exclusion>
           <artifactId>joni</artifactId>
+          <groupId>io.airlift</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>joda-to-java-time-bridge</artifactId>
           <groupId>io.airlift</groupId>
         </exclusion>
         <exclusion>
@@ -374,6 +378,10 @@
           <groupId>org.apache.bval</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>presto-plugin-toolkit</artifactId>
+          <groupId>com.facebook.presto</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>commons-math3</artifactId>
           <groupId>org.apache.commons</groupId>
         </exclusion>
@@ -387,6 +395,10 @@
         </exclusion>
         <exclusion>
           <artifactId>bootstrap</artifactId>
+          <groupId>io.airlift</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>concurrent</artifactId>
           <groupId>io.airlift</groupId>
         </exclusion>
         <exclusion>
@@ -437,13 +449,13 @@
     </dependency>
   </dependencies>
   <properties>
-    <slice.version>0.32</slice.version>
-    <guava.version>24.1-jre</guava.version>
+    <slice.version>0.36</slice.version>
+    <guava.version>27.1-jre</guava.version>
     <maven.compiler.source>1.8</maven.compiler.source>
-    <presto.version>0.200</presto.version>
+    <presto.version>0.217</presto.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <io.airlift.log.version>0.163</io.airlift.log.version>
+    <io.airlift.log.version>0.178</io.airlift.log.version>
   </properties>
 </project>
 
