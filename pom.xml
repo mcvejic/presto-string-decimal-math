@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <presto.version>0.217</presto.version>
+        <presto.version>306</presto.version>
         <slice.version>0.36</slice.version>
         <guava.version>27.1-jre</guava.version>
         <io.airlift.log.version>0.178</io.airlift.log.version>
@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.facebook.presto</groupId>
+            <groupId>io.prestosql</groupId>
             <artifactId>presto-spi</artifactId>
             <version>${presto.version}</version>
             <scope>provided</scope>
@@ -69,14 +69,14 @@
         </dependency>
 
         <dependency>
-            <groupId>com.facebook.presto</groupId>
+            <groupId>io.prestosql</groupId>
             <artifactId>presto-tests</artifactId>
             <version>${presto.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
-            <groupId>com.facebook.presto</groupId>
+            <groupId>io.prestosql</groupId>
             <artifactId>presto-main</artifactId>
             <version>${presto.version}</version>
             <type>test-jar</type>

@@ -4,11 +4,11 @@ package com.thinkstep.presto.udf.scalar;
  * Created by milan on 11/05/18.
  */
 
-import com.facebook.presto.spi.function.Description;
-import com.facebook.presto.spi.function.ScalarFunction;
-import com.facebook.presto.spi.function.SqlNullable;
-import com.facebook.presto.spi.function.SqlType;
-import com.facebook.presto.spi.type.StandardTypes;
+import io.prestosql.spi.function.Description;
+import io.prestosql.spi.function.ScalarFunction;
+import io.prestosql.spi.function.SqlNullable;
+import io.prestosql.spi.function.SqlType;
+import io.prestosql.spi.type.StandardTypes;
 import io.airlift.slice.Slice;
 import org.apfloat.Apfloat;
 

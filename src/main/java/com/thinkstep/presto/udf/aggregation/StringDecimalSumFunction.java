@@ -6,18 +6,18 @@ package com.thinkstep.presto.udf.aggregation;
   Calculate sum of big decimals represented as strings
  */
 
-import com.facebook.presto.spi.block.BlockBuilder;
-import com.facebook.presto.spi.function.AggregationFunction;
-import com.facebook.presto.spi.function.CombineFunction;
-import com.facebook.presto.spi.function.InputFunction;
-import com.facebook.presto.spi.function.OutputFunction;
-import com.facebook.presto.spi.function.SqlType;
-import com.facebook.presto.spi.type.StandardTypes;
+import io.prestosql.spi.block.BlockBuilder;
+import io.prestosql.spi.function.AggregationFunction;
+import io.prestosql.spi.function.CombineFunction;
+import io.prestosql.spi.function.InputFunction;
+import io.prestosql.spi.function.OutputFunction;
+import io.prestosql.spi.function.SqlType;
+import io.prestosql.spi.type.StandardTypes;
 import io.airlift.slice.Slice;
 import io.airlift.slice.Slices;
 import org.apfloat.Apfloat;
 
-import static com.facebook.presto.spi.type.VarcharType.VARCHAR;
+import static io.prestosql.spi.type.VarcharType.VARCHAR;
 
 @AggregationFunction("str_dec_math_sum")
 public class StringDecimalSumFunction

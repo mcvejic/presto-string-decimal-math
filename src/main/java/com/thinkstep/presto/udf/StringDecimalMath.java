@@ -5,7 +5,7 @@ package com.thinkstep.presto.udf;
  */
 import java.util.Set;
 
-import com.facebook.presto.spi.Plugin;
+import io.prestosql.spi.Plugin;
 import com.google.common.collect.ImmutableSet;
 import com.thinkstep.presto.udf.aggregation.StringDecimalAverageFunction;
 import com.thinkstep.presto.udf.aggregation.StringDecimalMaxFunction;

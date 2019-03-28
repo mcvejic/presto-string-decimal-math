@@ -1,6 +1,6 @@
 package com.thinkstep.presto.udf.aggregation;
 
-import com.facebook.presto.spi.function.AccumulatorState;
+import io.prestosql.spi.function.AccumulatorState;
 import io.airlift.slice.Slice;
 
 /**
