@@ -153,7 +153,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>fully.qualified.MainClass</mainClass>
+                            <mainClass>com.thinkstep.presto.udf.StringDecimalMath</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
